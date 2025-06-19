@@ -48,16 +48,16 @@ This project demonstrates a clean and modular `.NET 8` implementation of a servi
 
 ### Steps
 
-# Restore dependencies
+### Restore dependencies
 dotnet restore
 
-# Build all projects
+### Build all projects
 dotnet build
 
-# Run the demo console app
+### Run the demo console app
 dotnet run --project RaftLabs.Console
 
-# Run unit tests
+### Run unit tests
 dotnet test
 
 
