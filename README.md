@@ -18,20 +18,6 @@ This project demonstrates a clean and modular `.NET 8` implementation of a servi
 
 ---
 
-## Project Structure
-
-RaftLabs.Console // Sample Console app for demo
-RaftLabs.Application
-├── Configuration // ApiSettings config class
-├── DTOs // API response models
-├── Services // ExternalUserService implementation
-RaftLabs.Domain
-├── Interfaces // Service interface (IExternalUserService)
-├── Models // Internal User domain model
-RaftLabs.Test // NUnit + FluentAssertions test project
-
----
-
 ## Features Implemented
 
 ### API Integration
@@ -94,11 +80,3 @@ The API settings are defined in RaftLabs.Console/appsettings.json
 10: Byron Fields - byron.fields@reqres.in
 11: George Edwards - george.edwards@reqres.in
 12: Rachel Howell - rachel.howell@reqres.in
-
-
-## Design Decisions
-
-- System.Text.Json was used for performance and built-in support in .NET Core.
-- A UserDto model was introduced for clean separation from domain models.
-- Polly handles transient network failures gracefully.
-- Caching avoids unnecessary API calls, especially beneficial for GetUserByIdAsync.
